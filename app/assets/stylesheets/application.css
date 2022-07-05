@@ -13,3 +13,193 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+:root {
+    --primary-color: #b7c1de;
+    --secondary-color: #B8007A;
+    --dark-color: #092047;
+    --light-color: #7D99D1;
+    --light-color-2: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+img {
+    width: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0px;
+}
+
+/*Hero*/
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.5) 100%), url("https://upload.wikimedia.org/wikipedia/commons/9/9b/The.Matrix.glmatrix.2.png");
+    background-size: cover;
+    color: white;
+    position: relative;
+    height: 960px;
+    background-repeat: no-repeat;
+}
+
+/* Navbar*/
+
+.navbar {
+    height: 80px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: var(--light-color);
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 0 5px;
+    display: block;
+    font-weight: 600;
+    
+}
+
+.navbar a:hover {
+    border-bottom: 0.1px #fff solid;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+    overflow: visible;
+    justify-content: center;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+/* Welcome */
+
+.welcome {
+    height: 960px;
+    color: var(--light-color);
+    position: relative;
+    font-weight: 100;
+}
+
+.welcome h1 {
+    font-size: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.welcome p {
+    margin: 20px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.welcome .grid {
+    text-align: center;
+    gap: 30px;
+    overflow: visible;
+}
+
+/* Footer */
+
+.footer .social a {
+    margin: 0 10px;
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+    .grid,
+    .welcome .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .welcome {
+        height: auto;
+    }
+
+    .welcome-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .welcome-form {
+        justify-self: center;
+        margin: auto;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+    .navbar {
+        display: none;
+    }
+
+    .footer .container {
+        text-align: center;
+    }
+
+    .footer .social {
+        padding-top: 20px;
+    }
+
+    .welcome h1{
+        font-size: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0px;
+    }
+
+    .photo-buttons img {
+        height: 200px;
+        justify-self: flex-end;
+        border-radius: 5%;
+        overflow: hidden;
+    }
+
+    .hero {
+        height: 480px;
+    }
+
+    .welcome {
+        height: 480px;
+    }
+}
