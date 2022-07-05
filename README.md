@@ -1,7 +1,7 @@
 
 # Code Anth
 
-This is the repository for [[http://code-anth.xyz][Code Anth]], which hosts a research project run by Gui Heurich.
+This is the repository for [Code Anth](http://code-anth.xyz), which hosts a research project run by Gui Heurich.
 
 The project combines programming and anthropology. If coding is making software and anthropology is researching people, what could the intersection between them be? That is what we are trying to find out with Code Anth. Currently, the project is housed at University College London (UCL) and will remain there until 2023 - at least.
 
@@ -26,5 +26,5 @@ We currenlty run a reading group on things that intersect technical software mat
 
 ``` shell
 bundle install
-bin/rails db:migrate
+bin/rails db:create db:migrate
 ```
