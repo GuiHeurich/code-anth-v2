@@ -21,7 +21,7 @@
     --secondary-color: #B8007A;
     --dark-color: #092047;
     --light-color: #7D99D1;
-    --light-color-2: #fff;
+    --light-color-2: #d6dae9;
 }
 
 * {
@@ -34,7 +34,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color:rgb(32, 31, 31);
+    background-color:#d6dae9;
 }
 
 ul {
@@ -144,7 +144,7 @@ img {
     grid-template-columns: 1fr;
     gap: 100px;
     padding-top: 50px;
-    padding-bMain Text;
+    padding-bottom: 50px;
 }
 
 .main-text h2 {
@@ -195,6 +195,7 @@ img {
 
 .footer .social a {
     margin: 0 10px;
+    justify-content: center;
 }
 
 /* Tablets and under */
