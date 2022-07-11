@@ -17,11 +17,11 @@
  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-    --primary-color: #b7c1de;
+    --primary-color: white;
     --secondary-color: #B8007A;
-    --dark-color: #092047;
-    --light-color: #7D99D1;
-    --light-color-2: #d6dae9;
+    --dark-color: #020b1b;
+    --light-color: white;
+    --light-color-2: white;
 }
 
 * {
@@ -34,7 +34,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color:#d6dae9;
+    background-color:white;
 }
 
 ul {
@@ -68,6 +68,89 @@ img {
 
 /*Hero*/
 
+header {
+    height: 200vh;
+  }
+  
+.hero-container {
+    /* hide fixed overflow contents */
+    clip: rect(0, auto, auto, 0);
+
+    /* does not work if overflow = visible */
+    overflow: hidden;
+
+    /* only works with absolute positioning */
+    position: absolute;
+
+    /* Make sure hero-containers are full-width and height */
+    height: 100vh;
+    left: 0;
+    width: 100%;
+
+
+    /* safari hack */
+    -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);   
+}
+
+.hero-container_solid {
+    background: white;
+
+    /* position this hero-container at the top of its parent element */
+    top: 0;
+}
+
+.title_wrapper {
+    position: fixed;
+    display: block;  
+    margin: auto;
+    width: 100%;
+    /* center the text wrapper vertically */
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+.title_wrapper h1 {
+    text-align: center;
+    font-size: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+.hero-container_solid .title_wrapper h1 {
+    /* the text background */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.5) 100%), url("hero.jpg");
+    background-size: 100vw auto;
+    background-position: center;
+
+    /* clip the text is possible */
+    scrollbar-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /* fallback text color */
+    color: black;
+}
+
+.hero-container_image {
+    /* Grab a free image from unsplash */
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.5) 80%), url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    /* position the second hero-container below the first hero-container */
+    top: 100vh;
+}
+
+.hero-container_image .title_wrapper h1 {
+    color: var(--light-color-2)
+}
+
 .hero {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.5) 100%), url("hero.jpg");
     background-size: cover;
@@ -81,6 +164,10 @@ img {
 
 .navbar {
     height: 80px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: none;
 }
 
 .navbar ul {
