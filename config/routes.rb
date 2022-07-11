@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "home#index"
   get '/home', to: 'home#index'
-  get '/writings', to: 'article#index'
+  get '/writings', to: 'articles#index'
+  resources :articles
 end
