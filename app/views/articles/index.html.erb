@@ -1,0 +1,12 @@
+<!-- Main -->
+<div class="main-text bg-light my-2 py-2">
+    <div class="container grid grid-1">
+        <div class="text-center">
+            <h1 class="lg">writings</h1><br>
+            <% @articles.each do |article| %>
+              <%= link_to "#{article.title}", article %>
+              <br>
+              <% end %>
+        </div>
+    </div>
+</div>
