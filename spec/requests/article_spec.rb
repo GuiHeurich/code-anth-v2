@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Writings", type: :request do
+RSpec.describe "Articles", type: :request do
   describe "POST /new" do
     it "creates new articles" do
       get "/articles/new"
@@ -11,7 +11,7 @@ RSpec.describe "Writings", type: :request do
       assert_response :redirect
       follow_redirect!
       assert_response :success
-      assert_select "p", "Title:\n can create"
+      assert_select "h1", "::\n can create"
     end
   end
 end

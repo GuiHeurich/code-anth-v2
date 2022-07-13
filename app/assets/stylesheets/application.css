@@ -12,9 +12,10 @@
  *
  *= require_tree .
  *= require_self
+ *= require 'actiontext.css'
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
     --primary-color: white;
@@ -276,6 +277,10 @@ header {
 
 .photo-buttons .card:hover {
     transform: translateY(-15px);
+}
+
+.article-form {
+    text-align: justify;
 }
 
 /* Footer */
