@@ -51,7 +51,7 @@
 }
 
 .bg-light, .btn-light {
-    background-color: var(--light-color-2);
+    background-color: var(--light-color);
     color: #333;
 }
 
@@ -64,6 +64,7 @@
 .bg-light a, 
 .btn-light a {
     color: var(--light-color-2);
+    text-decoration: none;
 }
 
 /* Text sizes */

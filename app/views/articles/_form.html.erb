@@ -1,0 +1,9 @@
+<div class="article-form">
+<%= form_with scope: :article, url: articles_path do |form| %>
+  <%= form.label :title, style: "display:block" %>
+  <%= form.text_field :title %>
+  <%= form.label :content, style: "display:block" %>
+  <%= form.rich_text_area :body %>
+  <%= form.submit %>
+</div>
+<% end %>
