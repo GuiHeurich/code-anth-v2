@@ -1,11 +1,11 @@
 <!-- Main -->
-<div class="main-text bg-light my-2 py-2">
+<div class="main-text my-2 py-2">
     <div class="container grid grid-1">
-        <div class="text-center">
+        <div>
             <h1 class="lg">code :: anth writings</h1><br>
             <div>
               <% @articles.each do |article| %>
-                <%= link_to "#{article.title}", article %>
+                <h2><%= link_to "#{article.title}", article %><h2>
                 <br>
               <% end %>
             </div>
