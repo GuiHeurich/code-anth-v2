@@ -4,6 +4,14 @@
   <%= form.text_field :title %>
   <%= form.label :content, style: "display:block" %>
   <%= form.rich_text_area :body %>
-  <%= form.submit %>
+  <br>
+  <%= link_to "Update" %>
+</div>
+<br>
+<div>
+  <%= link_to "Delete", article_path(@article), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
 </div>
 <% end %>

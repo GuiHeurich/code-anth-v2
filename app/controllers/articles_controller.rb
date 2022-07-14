@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
     def index
-        @articles = Article.all
+      @articles = Article.all
     end
 
     def new
@@ -29,7 +29,7 @@ class ArticlesController < ApplicationController
       respond_to do |format|
         if @article.update(article_params)
           flash[:notice] = 'article was successfully updated.'
-          format.html { redirect_to(@article) }
+          format.html { redirect_to articles_path }
           format.xml  { head :ok }
         else
           format.html { render :action => "edit" }
@@ -37,6 +37,13 @@ class ArticlesController < ApplicationController
                       :status => :unprocessable_entity }
         end
       end
+    end
+
+    def destroy
+      @article = Article.find(params[:id])
+      @article.destroy
+
+      redirect_to articles_path, status: :see_other
     end
 
     private
