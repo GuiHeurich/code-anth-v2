@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
       @article = Article.find(params[:id])
 
       respond_to do |format|
-        if @article.update_attributes(params[:article])
+        if @article.update(article_params)
           flash[:notice] = 'article was successfully updated.'
           format.html { redirect_to(@article) }
           format.xml  { head :ok }
