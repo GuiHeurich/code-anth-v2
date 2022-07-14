@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   root "home#index"
+
+  resources :articles
+
   get '/home', to: 'home#index'
   get '/writings', to: 'articles#index'
-  resources :articles
   get '/events', to: 'events#index'
+  get '/readings', to: 'readings#index'
 end
