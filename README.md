@@ -12,7 +12,6 @@ A list of TODO's is provided below. Clone and contribute.
 # TODO
 
 [] Collaborative reading list, where people can upload content
-[] Design a new favicon
 
 # Learning and research group
 
