@@ -22,7 +22,7 @@ We currenlty run a reading group on things that intersect technical software mat
 # Contributing
 
 1. Clone the repository
-2. Make sure you've got Ruby and Ruby on Rails installed
+2. Make sure you've got Ruby 3+ and Ruby on Rails 7+ installed
 3. Run:
 
 ``` shell
