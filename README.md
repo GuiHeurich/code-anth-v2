@@ -11,8 +11,8 @@ A list of TODO's is provided below. Clone and contribute.
 
 # TODO
 
-[] Footer always at the bottom
-[] Collaborative reading list, where people can upload content
+- Footer always at the bottom
+- Collaborative reading list, where people can upload content
 
 # Learning and research group
 
