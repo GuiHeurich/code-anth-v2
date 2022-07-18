@@ -13,6 +13,7 @@ A list of TODO's is provided below. Clone and contribute.
 
 - Footer always at the bottom
 - Collaborative reading list, where people can upload content
+- Sort articles by id
 
 # Learning and research group
 
