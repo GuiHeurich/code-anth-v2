@@ -316,23 +316,12 @@ header {
 /* Mobile */
 
 @media (max-width: 500px) {
-    .navbar {
-        display: none;
-    }
-
     .footer .container {
         text-align: center;
     }
 
     .footer .social {
         padding-top: 20px;
-    }
-
-    .welcome h1{
-        font-size: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-bottom: 0px;
     }
 
     .photo-buttons img {
@@ -348,5 +337,18 @@ header {
 
     .welcome {
         height: 480px;
+    }
+
+    .title_wrapper h1 {
+        font-size: 28px;
+    }
+
+    .lg {
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+
+    .md {
+        font-size: 1.6rem;
     }
 }
