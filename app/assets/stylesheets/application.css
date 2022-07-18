@@ -283,6 +283,10 @@ header {
     text-align: justify;
 }
 
+.events h2 {
+    font-weight: 900;
+}
+
 /* Footer */
 
 .footer .social a {
